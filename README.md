@@ -1,90 +1,80 @@
-## <a name="tech-stack">⚙️ Tech Stack</a>
-
-- Next.js
-- TypeScript
-- Clerk
-- getstream
-- shadcn
-- Tailwind CSS
-
-## <a name="features">🔋 Features</a>
 
 
-👉 **Authentication**: Implements authentication and authorization features using Clerk, allowing users to securely log in via social sign-on or traditional email and password methods, while ensuring appropriate access levels and permissions within the platform.
+# 🚀 Project Overview
 
-👉 **New Meeting**: Quickly start a new meeting, configuring camera and microphone settings before joining.
+## ⚙️ Tech Stack
 
-👉 **Meeting Controls**: Participants have full control over meeting aspects, including recording, emoji reactions, screen sharing, muting/unmuting, sound adjustments, grid layout, participant list view, and individual participant management (pinning, muting, unmuting, blocking, allowing video share).
+- **Next.js**
+- **TypeScript**
+- **Clerk**
+- **GetStream**
+- **ShadCN**
+- **Tailwind CSS**
 
-👉 **Exit Meeting**: Participants can leave a meeting, or creators can end it for all attendees.
+## ⚙️Features
 
-👉 **Schedule Future Meetings**: Input meeting details (date, time) to schedule future meetings, accessible on the 'Upcoming Meetings' page for sharing the link or immediate start.
+### Authentication & Security
+- **Secure Login**: Authenticate via Clerk with social sign-on or email/password.
+- **Real-time Security**: Ensure data integrity with secure, real-time interactions.
 
-👉 **Past Meetings List**: Access a list of previously held meetings, including details and metadata.
+### Meetings & Controls
+- **Start & Manage Meetings**: Initiate and control meetings with ease.
+- **Meeting Customization**: Configure settings like recording, reactions, and screen sharing.
 
-👉 **View Recorded Meetings**: Access recordings of past meetings for review or reference.
+### Scheduling & History
+- **Schedule Future Meetings**: Plan ahead and manage upcoming meetings effortlessly.
+- **Access Past Meetings**: Review details and recordings of previous sessions.
 
-👉 **Personal Room**: Users have a personal room with a unique meeting link for instant meetings, shareable with others.
+### User Experience
+- **Responsive Design**: Seamlessly adapts to various devices for optimal user experience.
+- **Personal Meeting Rooms**: Instantly accessible with unique links for quick collaboration.
 
-👉 **Join Meetings via Link**: Easily join meetings created by others by providing a link.
+# 🛠️ Quick Setup
 
-👉 **Secure Real-time Functionality**: All interactions within the platform are secure and occur in real-time, maintaining user privacy and data integrity.
-
-👉 **Responsive Design**: Follows responsive design principles to ensure optimal user experience across devices, adapting seamlessly to different screen sizes and resolutions.
-
-and many more, including code architecture and reusability. 
-
-## <a name="quick-start">🤸 Quick Start</a>
-
-Follow these steps to set up the project locally on your machine.
-
-**Prerequisites**
-
-Make sure you have the following installed on your machine:
+### Requirements
 
 - [Git](https://git-scm.com/)
 - [Node.js](https://nodejs.org/en)
-- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [npm](https://www.npmjs.com/)
 
-**Cloning the Repository**
+### Getting Started
 
-```bash
-git clone https://github.com/adrianhajdin/zoom-clone.git
-cd zoom-clone
-```
+1. **Clone the Repository**
 
-**Installation**
+   ```bash
+   git clone https://github.com/adrianhajdin/zoom-clone.git
+   cd zoom-clone
+   ```
 
-Install the project dependencies using npm:
+2. **Install Dependencies**
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
-**Set Up Environment Variables**
+3. **Set Up Environment Variables**
 
-Create a new file named `.env` in the root of your project and add the following content:
+   Create a `.env` file in the root directory and add your credentials:
 
-```env
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+   ```env
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+   NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+   NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+   NEXT_PUBLIC_STREAM_API_KEY=
+   STREAM_SECRET_KEY=
+   ```
 
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+4. **Run the Project**
 
-NEXT_PUBLIC_STREAM_API_KEY=
-STREAM_SECRET_KEY=
-```
+   ```bash
+   npm run dev
+   ```
 
-Replace the placeholder values with your actual Clerk & getstream credentials. You can obtain these credentials by signing up on the [Clerk website](https://clerk.com/) and [getstream website](https://getstream.io/)
+5. **Explore Your Project**
 
-**Running the Project**
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view and interact with your application.
 
-```bash
-npm run dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
-
-
+This format emphasizes clarity, key features, and a step-by-step guide for easy setup, enhancing readability and user engagement.
