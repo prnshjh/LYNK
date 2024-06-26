@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "LYNK",
   description: "Video calling App",
   icons: {
-    icon: "/icons/newLOGO.png",
+    icon: "/icons/newLOGO.svg",
   },
 };
 
