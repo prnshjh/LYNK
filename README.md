@@ -42,8 +42,8 @@
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/adrianhajdin/zoom-clone.git
-   cd zoom-clone
+   git clone https://github.com/
+   cd folder-name
    ```
 
 2. **Install Dependencies**
